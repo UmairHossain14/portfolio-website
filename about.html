@@ -5,77 +5,199 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Learn more about me, my background, skills, and experience.">
     <title>About - My Portfolio</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts: Inter for body, Poppins for headings -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome 6 for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Animate.css for animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Navigation Header -->
     <header>
-        <nav class="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
             <div class="container">
-                <div class="nav-brand">My Portfolio</div>
-                <ul class="nav-menu">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="about.html" class="nav-link active">About</a></li>
-                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
-                </ul>
+                <a class="navbar-brand fw-bold fs-5" href="index.html">
+                    <i class="fas fa-code me-2"></i>My Portfolio
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                <i class="fas fa-home me-2"></i>Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="about.html">
+                                <i class="fas fa-user me-2"></i>About
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">
+                                <i class="fas fa-briefcase me-2"></i>Portfolio
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
 
     <main>
-        <section class="about-hero">
+        <!-- About Hero Section -->
+        <section class="about-hero py-5 text-white">
             <div class="container">
-                <h1>About Me</h1>
-            </div>
-        </section>
-
-        <section class="about-content">
-            <div class="container">
-                <div class="about-grid">
-                    <article class="about-text">
-                        <h2>My Journey</h2>
-                        <p>I'm a dedicated web developer with a passion for creating beautiful and functional websites. With a strong foundation in HTML, CSS, and JavaScript, I bring ideas to life through clean, responsive code.</p>
-                        <p>My journey in web development started with a curiosity about how websites work. Since then, I've honed my skills by building projects that solve real-world problems and provide excellent user experiences.</p>
-                    </article>
-                    <article class="about-text">
-                        <h2>Skills & Expertise</h2>
-                        <ul class="skills-list">
-                            <li>HTML5 & Semantic Markup</li>
-                            <li>CSS3 & Responsive Design</li>
-                            <li>JavaScript & DOM Manipulation</li>
-                            <li>Flexbox & CSS Grid</li>
-                            <li>Version Control (Git & GitHub)</li>
-                            <li>Web Performance Optimization</li>
-                        </ul>
-                    </article>
+                <div class="row align-items-center">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h1 class="display-4 fw-bold mb-3">About Me</h1>
+                        <p class="lead">Discover my journey in web development</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="experience">
+        <!-- About Content Section -->
+        <section class="about-content py-5">
             <div class="container">
-                <h2>Education & Learning</h2>
-                <article class="experience-item">
-                    <h3>Self-Directed Learning</h3>
-                    <p class="experience-meta">2024 - Present</p>
-                    <p>Currently focused on mastering HTML5, CSS3, and JavaScript fundamentals. Building projects from scratch to strengthen my understanding of web development best practices and responsive design.</p>
-                </article>
-                <article class="experience-item">
-                    <h3>Web Development Goals</h3>
-                    <p class="experience-meta">2024 - 2025</p>
-                    <p>Committed to developing a strong portfolio with real-world projects. My goals include mastering JavaScript, learning a frontend framework, and contributing to open-source projects.</p>
-                </article>
+                <div class="row g-5 align-items-center">
+                    <!-- My Journey -->
+                    <div class="col-lg-6">
+                        <article class="animate__animated animate__fadeInLeft">
+                            <h2 class="fw-bold mb-4">My Journey</h2>
+                            <p class="lh-lg text-muted mb-3">I'm a dedicated web developer with a passion for creating beautiful and functional websites. With a strong foundation in HTML, CSS, and JavaScript, I bring ideas to life through clean, responsive code.</p>
+                            <p class="lh-lg text-muted">My journey in web development started with a curiosity about how websites work. Since then, I've honed my skills by building projects that solve real-world problems and provide excellent user experiences.</p>
+                        </article>
+                    </div>
+
+                    <!-- Skills & Expertise -->
+                    <div class="col-lg-6">
+                        <article class="animate__animated animate__fadeInRight">
+                            <h2 class="fw-bold mb-4">Skills & Expertise</h2>
+                            <div class="row g-3">
+                                <div class="col-sm-6">
+                                    <div class="skill-badge">
+                                        <i class="fas fa-check-circle me-2 text-primary"></i>
+                                        <span class="fw-500">HTML5 & Semantic Markup</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="skill-badge">
+                                        <i class="fas fa-check-circle me-2 text-primary"></i>
+                                        <span class="fw-500">CSS3 & Responsive Design</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="skill-badge">
+                                        <i class="fas fa-check-circle me-2 text-primary"></i>
+                                        <span class="fw-500">JavaScript & DOM Manipulation</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="skill-badge">
+                                        <i class="fas fa-check-circle me-2 text-primary"></i>
+                                        <span class="fw-500">Flexbox & CSS Grid</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="skill-badge">
+                                        <i class="fas fa-check-circle me-2 text-primary"></i>
+                                        <span class="fw-500">Version Control (Git & GitHub)</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="skill-badge">
+                                        <i class="fas fa-check-circle me-2 text-primary"></i>
+                                        <span class="fw-500">Web Performance Optimization</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Learning Section -->
+        <section class="experience py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center fw-bold mb-5">Education & Learning</h2>
+                <div class="row g-4">
+                    <!-- Self-Directed Learning -->
+                    <div class="col-md-6">
+                        <article class="card experience-card border-0 shadow-sm animate__animated animate__fadeInUp">
+                            <div class="card-body p-4">
+                                <div class="d-flex align-items-start">
+                                    <div class="flex-shrink-0">
+                                        <i class="fas fa-graduation-cap experience-icon"></i>
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h3 class="card-title fw-bold">Self-Directed Learning</h3>
+                                        <p class="text-muted small mb-3">2024 - Present</p>
+                                        <p class="card-text text-muted">Currently focused on mastering HTML5, CSS3, and JavaScript fundamentals. Building projects from scratch to strengthen my understanding of web development best practices and responsive design.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Web Development Goals -->
+                    <div class="col-md-6">
+                        <article class="card experience-card border-0 shadow-sm animate__animated animate__fadeInUp" style="animation-delay: 0.1s">
+                            <div class="card-body p-4">
+                                <div class="d-flex align-items-start">
+                                    <div class="flex-shrink-0">
+                                        <i class="fas fa-rocket experience-icon"></i>
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h3 class="card-title fw-bold">Web Development Goals</h3>
+                                        <p class="text-muted small mb-3">2024 - 2025</p>
+                                        <p class="card-text text-muted">Committed to developing a strong portfolio with real-world projects. My goals include mastering JavaScript, learning a frontend framework, and contributing to open-source projects.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
         <div class="container">
-            <p>&copy; 2024 My Portfolio. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="https://github.com/UmairHossain14" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
-                <a href="mailto:umairhossain704@gmail.com" class="footer-link">Email</a>
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2024 My Portfolio. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="footer-links">
+                        <a href="https://github.com/UmairHossain14" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-light me-2">
+                            <i class="fab fa-github me-1"></i>GitHub
+                        </a>
+                        <a href="mailto:umairhossain704@gmail.com" class="btn btn-sm btn-outline-light">
+                            <i class="fas fa-envelope me-1"></i>Email
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

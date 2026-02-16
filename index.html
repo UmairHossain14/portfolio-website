@@ -5,60 +5,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Welcome to my portfolio. Explore my projects and skills.">
     <title>Home - My Portfolio</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts: Inter for body, Poppins for headings -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome 6 for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Animate.css for animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Navigation Header -->
     <header>
-        <nav class="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
             <div class="container">
-                <div class="nav-brand">My Portfolio</div>
-                <ul class="nav-menu">
-                    <li><a href="index.html" class="nav-link active">Home</a></li>
-                    <li><a href="about.html" class="nav-link">About</a></li>
-                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
-                </ul>
+                <a class="navbar-brand fw-bold fs-5" href="index.html">
+                    <i class="fas fa-code me-2"></i>My Portfolio
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">
+                                <i class="fas fa-home me-2"></i>Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">
+                                <i class="fas fa-user me-2"></i>About
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">
+                                <i class="fas fa-briefcase me-2"></i>Portfolio
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
+        <!-- Hero Section -->
+        <section class="hero py-5 text-white">
             <div class="container">
-                <h1>Welcome to My Portfolio</h1>
-                <p class="hero-subtitle">I'm a passionate developer creating amazing digital experiences</p>
-                <a href="portfolio.html" class="btn btn-primary">View My Work</a>
+                <div class="row align-items-center min-vh-75">
+                    <div class="col-lg-8 mx-auto text-center animate__animated animate__fadeInUp">
+                        <h1 class="display-4 fw-bold mb-3">Welcome to My Portfolio</h1>
+                        <p class="lead mb-4">I'm a passionate developer creating amazing digital experiences</p>
+                        <a href="portfolio.html" class="btn btn-light btn-lg fw-bold">
+                            <i class="fas fa-arrow-right me-2"></i>View My Work
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="features">
+        <!-- Features Section -->
+        <section class="features py-5 bg-light">
             <div class="container">
-                <h2>What I Do</h2>
-                <div class="features-grid">
-                    <article class="feature-card">
-                        <h3>Web Development</h3>
-                        <p>Building responsive, modern websites using HTML, CSS, and JavaScript</p>
-                    </article>
-                    <article class="feature-card">
-                        <h3>Responsive Design</h3>
-                        <p>Creating beautiful interfaces that work seamlessly on all devices</p>
-                    </article>
-                    <article class="feature-card">
-                        <h3>User Experience</h3>
-                        <p>Designing intuitive interfaces with the user's needs in mind</p>
-                    </article>
+                <h2 class="text-center mb-5 fw-bold">What I Do</h2>
+                <div class="row g-4">
+                    <!-- Web Development Card -->
+                    <div class="col-md-6 col-lg-4">
+                        <article class="card feature-card border-0 h-100 shadow-sm animate__animated animate__fadeInUp" style="animation-delay: 0.1s">
+                            <div class="card-body text-center p-4">
+                                <div class="mb-3">
+                                    <i class="fas fa-code feature-icon"></i>
+                                </div>
+                                <h3 class="card-title fw-bold mb-3">Web Development</h3>
+                                <p class="card-text text-muted">Building responsive, modern websites using HTML, CSS, and JavaScript</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Responsive Design Card -->
+                    <div class="col-md-6 col-lg-4">
+                        <article class="card feature-card border-0 h-100 shadow-sm animate__animated animate__fadeInUp" style="animation-delay: 0.2s">
+                            <div class="card-body text-center p-4">
+                                <div class="mb-3">
+                                    <i class="fas fa-mobile-alt feature-icon"></i>
+                                </div>
+                                <h3 class="card-title fw-bold mb-3">Responsive Design</h3>
+                                <p class="card-text text-muted">Creating beautiful interfaces that work seamlessly on all devices</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- User Experience Card -->
+                    <div class="col-md-6 col-lg-4">
+                        <article class="card feature-card border-0 h-100 shadow-sm animate__animated animate__fadeInUp" style="animation-delay: 0.3s">
+                            <div class="card-body text-center p-4">
+                                <div class="mb-3">
+                                    <i class="fas fa-lightbulb feature-icon"></i>
+                                </div>
+                                <h3 class="card-title fw-bold mb-3">User Experience</h3>
+                                <p class="card-text text-muted">Designing intuitive interfaces with the user's needs in mind</p>
+                            </div>
+                        </article>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
         <div class="container">
-            <p>&copy; 2024 My Portfolio. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="https://github.com/UmairHossain14" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
-                <a href="mailto:umairhossain704@gmail.com" class="footer-link">Email</a>
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2024 My Portfolio. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="footer-links">
+                        <a href="https://github.com/UmairHossain14" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-light me-2">
+                            <i class="fab fa-github me-1"></i>GitHub
+                        </a>
+                        <a href="mailto:umairhossain704@gmail.com" class="btn btn-sm btn-outline-light">
+                            <i class="fas fa-envelope me-1"></i>Email
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
