@@ -1,6 +1,6 @@
 /* ===================================
-   BAND 2 & BAND 3 CUSTOMIZATIONS
-   Bootstrap 5 Custom Styling
+   PREMIUM AESTHETIC PORTFOLIO
+   Dark, Sophisticated, Professional Design
    =================================== */
 
 /* ===================================
@@ -8,15 +8,21 @@
    =================================== */
 
 :root {
-    /* Brand Colors */
-    --primary-color: #2563eb;
-    --secondary-color: #1e40af;
-    --text-color: #1f2937;
-    --light-text: #6b7280;
-    --bg-color: #ffffff;
-    --light-bg: #f3f4f6;
-    --border-color: #e5e7eb;
-    --dark-bg: #111827;
+    /* Primary Color Palette - Sophisticated Dark */
+    --primary-dark: #1a1a2e;           /* Deep navy/charcoal */
+    --primary-medium: #16213e;         /* Rich midnight blue */
+    --primary-accent: #0f3460;         /* Deep ocean blue */
+    --accent-highlight: #e94560;       /* Elegant coral/rose */
+    
+    /* Text Colors */
+    --text-light: #eaeaea;             /* Soft white for dark backgrounds */
+    --text-dark: #2d3436;              /* Charcoal gray for light backgrounds */
+    --text-muted: #8b92a3;             /* Muted gray for secondary text */
+    
+    /* Background Colors */
+    --bg-light: #f8f9fa;               /* Off-white */
+    --bg-card: #ffffff;                /* Pure white with subtle shadows */
+    --bg-dark: #1a1a2e;                /* Dark background */
     
     /* Typography */
     --font-family-heading: 'Poppins', sans-serif;
