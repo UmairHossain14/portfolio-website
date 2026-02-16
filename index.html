@@ -9,10 +9,10 @@
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Google Fonts: Inter for body, Poppins for headings -->
+    <!-- Google Fonts: Playfair Display for headings, Inter for body -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Font Awesome 6 for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -26,7 +26,7 @@
 <body>
     <!-- Navigation Header -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top">
             <div class="container">
                 <a class="navbar-brand fw-bold fs-5" href="index.html">
                     <i class="fas fa-code me-2"></i>My Portfolio
@@ -59,60 +59,80 @@
 
     <main>
         <!-- Hero Section -->
-        <section class="hero py-5 text-white">
+        <section class="hero-section text-white">
             <div class="container">
                 <div class="row align-items-center min-vh-75">
-                    <div class="col-lg-8 mx-auto text-center animate__animated animate__fadeInUp">
-                        <h1 class="display-4 fw-bold mb-3">Welcome to My Portfolio</h1>
-                        <p class="lead mb-4">I'm a passionate developer creating amazing digital experiences</p>
-                        <a href="portfolio.html" class="btn btn-light btn-lg fw-bold">
-                            <i class="fas fa-arrow-right me-2"></i>View My Work
-                        </a>
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h1 class="display-3 fw-bold mb-4 animate__animated animate__fadeInDown">
+                            Welcome to My Portfolio
+                        </h1>
+                        <p class="lead mb-4 animate__animated animate__fadeInUp">
+                            I'm a passionate web developer crafting beautiful and functional digital experiences
+                        </p>
+                        <div class="d-flex gap-3 justify-content-center animate__animated animate__fadeInUp animate__delay-1s">
+                            <a href="portfolio.html" class="btn btn-lg btn-primary">
+                                <i class="fas fa-briefcase me-2"></i>View My Work
+                            </a>
+                            <a href="about.html" class="btn btn-lg btn-outline-light">
+                                <i class="fas fa-user me-2"></i>Learn About Me
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Features Section -->
-        <section class="features py-5 bg-light">
+        <section class="features-section">
             <div class="container">
-                <h2 class="text-center mb-5 fw-bold">What I Do</h2>
                 <div class="row g-4">
-                    <!-- Web Development Card -->
-                    <div class="col-md-6 col-lg-4">
-                        <article class="card feature-card border-0 h-100 shadow-sm animate__animated animate__fadeInUp" style="animation-delay: 0.1s">
-                            <div class="card-body text-center p-4">
-                                <div class="mb-3">
-                                    <i class="fas fa-code feature-icon"></i>
-                                </div>
-                                <h3 class="card-title fw-bold mb-3">Web Development</h3>
-                                <p class="card-text text-muted">Building responsive, modern websites using HTML, CSS, and JavaScript</p>
+                    <!-- Feature 1 -->
+                    <div class="col-lg-4">
+                        <article class="feature-card animate__animated animate__fadeInUp">
+                            <div class="feature-image">
+                                <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=400&q=80" 
+                                     alt="Modern web development workspace with code editor and design tools" 
+                                     loading="lazy">
+                            </div>
+                            <div class="feature-content">
+                                <h3 class="fw-bold mb-2">
+                                    <i class="fas fa-laptop-code text-primary me-2"></i>Web Development
+                                </h3>
+                                <p class="text-muted">Creating responsive and performant web applications with modern technologies and best practices.</p>
                             </div>
                         </article>
                     </div>
 
-                    <!-- Responsive Design Card -->
-                    <div class="col-md-6 col-lg-4">
-                        <article class="card feature-card border-0 h-100 shadow-sm animate__animated animate__fadeInUp" style="animation-delay: 0.2s">
-                            <div class="card-body text-center p-4">
-                                <div class="mb-3">
-                                    <i class="fas fa-mobile-alt feature-icon"></i>
-                                </div>
-                                <h3 class="card-title fw-bold mb-3">Responsive Design</h3>
-                                <p class="card-text text-muted">Creating beautiful interfaces that work seamlessly on all devices</p>
+                    <!-- Feature 2 -->
+                    <div class="col-lg-4">
+                        <article class="feature-card animate__animated animate__fadeInUp">
+                            <div class="feature-image">
+                                <img src="https://images.unsplash.com/photo-1559028012-e5d662f46e9f?w=400&q=80" 
+                                     alt="UI/UX design tools and wireframes for digital product design" 
+                                     loading="lazy">
+                            </div>
+                            <div class="feature-content">
+                                <h3 class="fw-bold mb-2">
+                                    <i class="fas fa-palette text-primary me-2"></i>UI/UX Design
+                                </h3>
+                                <p class="text-muted">Designing intuitive user interfaces with a focus on user experience and accessibility.</p>
                             </div>
                         </article>
                     </div>
 
-                    <!-- User Experience Card -->
-                    <div class="col-md-6 col-lg-4">
-                        <article class="card feature-card border-0 h-100 shadow-sm animate__animated animate__fadeInUp" style="animation-delay: 0.3s">
-                            <div class="card-body text-center p-4">
-                                <div class="mb-3">
-                                    <i class="fas fa-lightbulb feature-icon"></i>
-                                </div>
-                                <h3 class="card-title fw-bold mb-3">User Experience</h3>
-                                <p class="card-text text-muted">Designing intuitive interfaces with the user's needs in mind</p>
+                    <!-- Feature 3 -->
+                    <div class="col-lg-4">
+                        <article class="feature-card animate__animated animate__fadeInUp">
+                            <div class="feature-image">
+                                <img src="https://images.unsplash.com/photo-1581291518857-5e141318661d?w=400&q=80" 
+                                     alt="Performance optimization and analytics dashboard" 
+                                     loading="lazy">
+                            </div>
+                            <div class="feature-content">
+                                <h3 class="fw-bold mb-2">
+                                    <i class="fas fa-chart-line text-primary me-2"></i>Optimization
+                                </h3>
+                                <p class="text-muted">Optimizing performance and ensuring seamless user experiences across all devices and browsers.</p>
                             </div>
                         </article>
                     </div>
@@ -122,15 +142,15 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-4 mt-5">
+    <footer>
         <div class="container">
             <div class="row">
                 <div class="col-md-6 mb-3 mb-md-0">
-                    <p class="mb-0">&copy; 2024 My Portfolio. All rights reserved.</p>
+                    <p class="mb-0">&copy; 2026 My Portfolio. All rights reserved.</p>
                 </div>
                 <div class="col-md-6 text-md-end">
                     <div class="footer-links">
-                        <a href="https://github.com/UmairHossain14" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-light me-2">
+                        <a href="https://github.com/UmairHossain14" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-light">
                             <i class="fab fa-github me-1"></i>GitHub
                         </a>
                         <a href="mailto:umairhossain704@gmail.com" class="btn btn-sm btn-outline-light">
