@@ -9,10 +9,10 @@
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Google Fonts: Playfair Display for headings, Inter for body -->
+    <!-- Google Fonts: Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Font Awesome 6 for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -25,11 +25,11 @@
 </head>
 <body>
     <!-- Navigation Header -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
-                <a class="navbar-brand fw-bold fs-5" href="index.html">
-                    <i class="fas fa-code me-2"></i>My Portfolio
+                <a class="navbar-brand fw-bold" href="index.html">
+                    <i class="fas fa-code me-2"></i>Umar Hossain
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -77,18 +77,12 @@
                 <div class="row g-4">
                     <!-- Project 1: GitHub Portfolio Website -->
                     <!-- COPY THIS PROJECT CARD TO ADD A NEW PROJECT -->
-                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="col-12 col-md-6 col-lg-4">
                         <article class="card project-card border-0 shadow-sm h-100 animate__animated animate__fadeInUp">
-                            <div class="card-img-top project-image">
-                                <div class="placeholder-image">
-                                    <i class="fas fa-code-branch"></i>
-                                </div>
-                            </div>
+                            <img src="images/project1.jpg" alt="Portfolio Website Project" class="card-img-top project-image">
                             <div class="card-body d-flex flex-column p-4">
-                                <h3 class="card-title fw-bold mb-3">
-                                    <i class="fas fa-link me-2 text-primary"></i>GitHub Portfolio Website
-                                </h3>
-                                <p class="card-text text-muted flex-grow-1">A responsive 3-page portfolio website showcasing my work and skills. Built with semantic HTML5, CSS3 with Flexbox and Grid for responsive design across all devices.</p>
+                                <h3 class="card-title fw-bold mb-3">Portfolio Website</h3>
+                                <p class="card-text text-muted flex-grow-1">A responsive 3-page portfolio website showcasing my work and skills. Built with semantic HTML5, Bootstrap, CSS3, and modern design principles. Features smooth animations and responsive navigation.</p>
                                 <div class="mb-3">
                                     <span class="badge bg-light text-primary me-2">
                                         <i class="fab fa-html5 me-1"></i>HTML5
@@ -97,11 +91,11 @@
                                         <i class="fab fa-css3 me-1"></i>CSS3
                                     </span>
                                     <span class="badge bg-light text-primary">
-                                        <i class="fas fa-mobile-alt me-1"></i>Responsive
+                                        <i class="fab fa-bootstrap me-1"></i>Bootstrap
                                     </span>
                                 </div>
                                 <a href="https://github.com/UmairHossain14/portfolio-website" target="_blank" rel="noopener noreferrer" class="btn btn-primary fw-bold">
-                                    <i class="fas fa-external-link-alt me-2"></i>View Project
+                                    <i class="fab fa-github me-2"></i>View on GitHub
                                 </a>
                             </div>
                         </article>
@@ -109,18 +103,12 @@
 
                     <!-- Project 2: HTML & CSS Website Practice -->
                     <!-- COPY THIS PROJECT CARD TO ADD A NEW PROJECT -->
-                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="col-12 col-md-6 col-lg-4">
                         <article class="card project-card border-0 shadow-sm h-100 animate__animated animate__fadeInUp" style="animation-delay: 0.1s">
-                            <div class="card-img-top project-image">
-                                <div class="placeholder-image">
-                                    <i class="fas fa-paint-brush"></i>
-                                </div>
-                            </div>
+                            <img src="images/project2.jpg" alt="HTML & CSS Practice Project" class="card-img-top project-image">
                             <div class="card-body d-flex flex-column p-4">
-                                <h3 class="card-title fw-bold mb-3">
-                                    <i class="fas fa-file-code me-2 text-primary"></i>HTML & CSS Website Practice
-                                </h3>
-                                <p class="card-text text-muted flex-grow-1">A practice project focused on building clean, semantic HTML structure and modern CSS styling. Demonstrates understanding of web standards and responsive design principles.</p>
+                                <h3 class="card-title fw-bold mb-3">HTML & CSS Practice</h3>
+                                <p class="card-text text-muted flex-grow-1">A practice project focused on building clean, semantic HTML structure and modern CSS styling. Demonstrates understanding of web standards, CSS Grid, Flexbox, and responsive design principles.</p>
                                 <div class="mb-3">
                                     <span class="badge bg-light text-primary me-2">
                                         <i class="fab fa-html5 me-1"></i>HTML5
@@ -132,7 +120,7 @@
                                         <i class="fas fa-book me-1"></i>Practice
                                     </span>
                                 </div>
-                                <button class="btn btn-outline-primary fw-bold" disabled>
+                                <button class="btn btn-outline-primary fw-bold" disabled title="Project coming soon">
                                     <i class="fas fa-clock me-2"></i>Coming Soon
                                 </button>
                             </div>
@@ -141,61 +129,24 @@
 
                     <!-- Project 3: JavaScript Mini Project -->
                     <!-- COPY THIS PROJECT CARD TO ADD A NEW PROJECT -->
-                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="col-12 col-md-6 col-lg-4">
                         <article class="card project-card border-0 shadow-sm h-100 animate__animated animate__fadeInUp" style="animation-delay: 0.2s">
-                            <div class="card-img-top project-image">
-                                <div class="placeholder-image">
-                                    <i class="fab fa-js-square"></i>
-                                </div>
-                            </div>
+                            <img src="images/project3.jpg" alt="JavaScript Mini Project" class="card-img-top project-image">
                             <div class="card-body d-flex flex-column p-4">
-                                <h3 class="card-title fw-bold mb-3">
-                                    <i class="fas fa-cog me-2 text-primary"></i>JavaScript Mini Project
-                                </h3>
-                                <p class="card-text text-muted flex-grow-1">An interactive JavaScript project focusing on DOM manipulation and event handling. Currently in development to explore JavaScript fundamentals and best practices.</p>
+                                <h3 class="card-title fw-bold mb-3">JavaScript Mini Project</h3>
+                                <p class="card-text text-muted flex-grow-1">An interactive JavaScript project focusing on DOM manipulation and event handling. Currently in development to explore JavaScript fundamentals, best practices, and interactive user experiences.</p>
                                 <div class="mb-3">
                                     <span class="badge bg-light text-primary me-2">
                                         <i class="fab fa-js me-1"></i>JavaScript
                                     </span>
                                     <span class="badge bg-light text-primary me-2">
-                                        <i class="fas fa-code me-1"></i>DOM
+                                        <i class="fas fa-code me-1"></i>DOM API
                                     </span>
                                     <span class="badge bg-light text-primary">
                                         <i class="fas fa-sync me-1"></i>In Progress
                                     </span>
                                 </div>
-                                <button class="btn btn-outline-primary fw-bold" disabled>
-                                    <i class="fas fa-clock me-2"></i>Coming Soon
-                                </button>
-                            </div>
-                        </article>
-                    </div>
-
-                    <!-- Project 4: Project Coming Soon -->
-                    <!-- COPY THIS PROJECT CARD TO ADD A NEW PROJECT -->
-                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                        <article class="card project-card border-0 shadow-sm h-100 animate__animated animate__fadeInUp" style="animation-delay: 0.3s">
-                            <div class="card-img-top project-image">
-                                <div class="placeholder-image">
-                                    <i class="fas fa-star"></i>
-                                </div>
-                            </div>
-                                </div>
-                            </div>
-                            <div class="card-body d-flex flex-column p-4">
-                                <h3 class="card-title fw-bold mb-3">
-                                    <i class="fas fa-folder me-2 text-primary"></i>Project Coming Soon
-                                </h3>
-                                <p class="card-text text-muted flex-grow-1">I'm currently working on new projects to expand my portfolio. Stay tuned for more examples of my work in web development and creative problem-solving.</p>
-                                <div class="mb-3">
-                                    <span class="badge bg-light text-primary me-2">
-                                        <i class="fas fa-hourglass-end me-1"></i>Coming Soon
-                                    </span>
-                                    <span class="badge bg-light text-primary">
-                                        <i class="fas fa-cube me-1"></i>TBD
-                                    </span>
-                                </div>
-                                <button class="btn btn-outline-primary fw-bold" disabled>
+                                <button class="btn btn-outline-primary fw-bold" disabled title="Project in progress">
                                     <i class="fas fa-clock me-2"></i>Coming Soon
                                 </button>
                             </div>
@@ -209,16 +160,18 @@
     <!-- Footer -->
     <footer class="bg-dark text-white py-4 mt-5">
         <div class="container">
-            <div class="row">
+            <div class="row align-items-center">
                 <div class="col-md-6 mb-3 mb-md-0">
-                    <p class="mb-0">&copy; 2024 My Portfolio. All rights reserved.</p>
+                    <p class="mb-0 text-muted">
+                        &copy; 2026 Umar Hossain. All rights reserved.
+                    </p>
                 </div>
-                <div class="col-md-6 text-md-end">
-                    <div class="footer-links">
-                        <a href="https://github.com/UmairHossain14" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-light me-2">
+                <div class="col-md-6">
+                    <div class="footer-links d-flex gap-3 justify-content-md-end">
+                        <a href="https://github.com/UmairHossain14" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-light" title="GitHub Profile">
                             <i class="fab fa-github me-1"></i>GitHub
                         </a>
-                        <a href="mailto:umairhossain704@gmail.com" class="btn btn-sm btn-outline-light">
+                        <a href="mailto:umairhossain704@gmail.com" class="btn btn-sm btn-outline-light" title="Send Email">
                             <i class="fas fa-envelope me-1"></i>Email
                         </a>
                     </div>
